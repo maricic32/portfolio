@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="fav/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="fav/favicon.svg" />
+<link rel="shortcut icon" href="fav/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png" />
+<link rel="manifest" href="fav/site.webmanifest" />
+</head>
+
+<body>
+    <header>
+    <div class="logo">Artify Portfolio</div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="gallery.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+    <section class="home" id="home">
+
+        <div class="overlay"></div>
+
+        <div class="home-content">
+
+            <h1>Welcome To Artify Portfolio</h1>
+
+            <p>
+                Moderna portfolio platforma gde umetnici, dizajneri i kreatori predstavljaju svoju jedinstvenu viziju svetu.
+            </p>
+
+            <button id="openModal">Sign In</button>
+
+            </div>
+
+    </section>
+    <section class="auth-section">
+
+    <div class="auth-text">
+        <h2>Zašto izabrati Artify?</h2>
+        <p>
+            Artify nije samo portfolio — to je prostor gde kreativnost postaje vidljiva, organizovana i profesionalno predstavljena.
+        </p>
+    </div>
+
+    <div class="auth-cards">
+
+        <div class="auth-card">
+            <h3>🎨 Predstavi svoj rad</h3>
+            <p>Prikaži svoje projekte na moderan i profesionalan način.</p>
+        </div>
+
+        <div class="auth-card">
+            <h3>⚡ Jednostavan i moderan dizajn</h3>
+            <p>Minimalistički UI koji fokus stavlja na tvoju umetnost.</p>
+        </div>
+
+        <div class="auth-card">
+            <h3>🌍 Globalni domet</h3>
+            <p>Poveži se sa klijentima i kreativcima širom sveta.</p>
+        </div>
+
+    </div>
+
+    </section>
+    <section class="about" id="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            Artify je moderna portfolio platforma namenjena promociji kreativnih radova, fotografije, dizajna i umetničkih projekata, gde korisnici mogu predstaviti svoju kreativnost i podeliti svoje radove sa drugima.
+        </p>
+        <a href="about.html" class="cta-btn">Saznaj više</a>
+
+    </section>
+    <section class="gallery-section" id="gallery">
+
+        <h2>Portfolio</h2>
+        <p>
+          Ova portfolio stranica pruža pregled različitih oblasti kreativnog stvaralaštva za koje je moguće izraditi profesionalan portfolio sajt.Kroz primere i prikazane radove možete steći uvid u načine predstavljanja fotografije, grafičkog dizajna, digitalne umetnosti, ilustracija, web dizajna i drugih kreativnih disciplina.Cilj portfolija je da pokaže kako kvalitetno organizovan i vizuelno privlačan sajt može doprineti promociji umetnika, izgradnji ličnog brenda i predstavljanju radova potencijalnim klijentima i saradnicima.
+        </p>
+
+        <div class="gallery">
+
+            <div class="image-box">
+                <img src="slike/slika1.jpg" alt="">
+            </div>
+
+            <div class="image-box">
+                <img src="slike/slika2.jpg" alt="">
+            </div>
+
+            <div class="image-box">
+                <img src="slike/slika3.jpg" alt="">
+            </div>
+
+            <div class="image-box">
+                <img src="slike/slika4.jpg" alt="">
+            </div>
+
+        </div>
+        <a href="gallery.html" class="cta-btn">Saznaj više</a>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © 2026 Artify Portfolio | All Rights Reserved
+        </p>
+
+    </footer>
+    <div id="modal" class="modal">
+
+  <div class="modal-content">
+
+    <span class="close" id="closeModal">&times;</span>
+
+    <h2>Sign In</h2>
+
+    <form>
+        <input type="email" placeholder="Enter your email" required>
+        <input type="password" placeholder="Password" required>
+
+        <button type="submit">Login</button>
+    </form>
+
+  </div>
+
+</div>
+<script>
+    const modal = document.getElementById("modal");
+    const openBtn = document.getElementById("openModal");
+    const closeBtn = document.getElementById("closeModal");
+
+    openBtn.onclick = function(){
+        modal.classList.add("show");
+    }
+
+    closeBtn.onclick = function(){
+        modal.classList.remove("show");
+    }
+
+    window.onclick = function(e){
+        if(e.target == modal){
+            modal.classList.remove("show");
+        }
+    }
+</script>
+<script>var BotStar={appId:"s59d08102-2104-4a5f-be4b-b7bfc65300be",mode:"livechat"};!function(t,a){var e=function(){(e.q=e.q||[]).push(arguments)};e.q=e.q||[],t.BotStarApi=e;!function(){var t=a.createElement("script");t.type="text/javascript",t.async=1,t.src="https://widget.botstar.com/static/js/widget.js";var e=a.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}();}(window,document)</script>
+
+</body>
+</html>

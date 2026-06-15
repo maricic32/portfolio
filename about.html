@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="fav/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="fav/favicon.svg" />
+<link rel="shortcut icon" href="fav/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png" />
+<link rel="manifest" href="fav/site.webmanifest" />
+</head>
+<body>
+
+    <header>
+    <div class="logo">Artify Portfolio</div>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="gallery.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <section class="about-page">
+
+        <div class="about-content">
+
+            <h1>Sve o Artify Portfoliu</h1>
+
+            <p>
+                Artify Portfolio je moderna platforma namenjena umetnicima,
+                dizajnerima, fotografima i kreativcima koji žele da predstave
+                svoje radove široj publici. Naš cilj je da omogućimo kreatorima
+                profesionalan prostor za prikaz njihovih projekata i razvoj
+                ličnog brenda.
+            </p>
+
+            <p>
+                Kroz pažljivo dizajniran portfolio sistem, korisnici mogu
+                organizovati svoje radove, prikazati kreativne projekte i
+                povezati se sa potencijalnim klijentima, saradnicima i
+                ljubiteljima umetnosti.
+            </p>
+
+            <p>
+                Verujemo da svaki kreativni rad zaslužuje kvalitetnu prezentaciju.
+                Zato Artify pruža elegantno i moderno okruženje koje ističe
+                jedinstvenost svakog umetnika i omogućava da njegova inspiracija
+                dopre do šire zajednice.
+            </p>
+
+        </div>
+
+        <div class="about-features">
+
+            <div class="feature-card">
+                <h3>Kreativna promocija</h3>
+                <p>
+                    Predstavite fotografije, ilustracije, dizajn projekte i
+                    digitalnu umetnost na profesionalan način.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Upravljanje portfoliom</h3>
+                <p>
+                    Organizujte radove u pregledne galerije i kreirajte
+                    jedinstvenu prezentaciju svog stvaralaštva.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Promocija umetnika</h3>
+                <p>
+                    Izgradite online prisustvo i približite svoj rad novoj
+                    publici i potencijalnim saradnicima.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="stats-section">
+
+    <h2>Artify u brojkama</h2>
+
+    <div class="stats-container">
+
+        <div class="stat-box">
+            <h3>500+</h3>
+            <p>Objavljenih radova</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>120+</h3>
+            <p>Aktivnih umetnika</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>50+</h3>
+            <p>Uspešnih saradnji</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>10K+</h3>
+            <p>Poseta mesečno</p>
+        </div>
+
+    </div>
+
+</section>
+
+    <footer>
+        <p>
+            © 2026 Artify Portfolio | All Rights Reserved
+        </p>
+    </footer>
+    <script>
+function animateCounter(id, target, speed){
+
+    let counter = 0;
+    const element = document.getElementById(id);
+
+    const interval = setInterval(() => {
+
+        counter += Math.ceil(target / speed);
+
+        if(counter >= target){
+            counter = target;
+            clearInterval(interval);
+        }
+
+        element.textContent = counter + "+";
+
+    }, 20);
+}
+
+animateCounter("projects", 500, 50);
+animateCounter("artists", 120, 50);
+animateCounter("partners", 50, 50);
+animateCounter("visitors", 10000, 100);
+</script>
+
+</body>
+</html>
