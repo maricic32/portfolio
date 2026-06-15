@@ -27,6 +27,9 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <div class="menu-toggle">
+        ☰
+    </div>
 </header>
 <section class="portfolio-info">
 
@@ -238,6 +241,13 @@ function revealOnScroll() {
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
 </script>
+<script>
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav');
 
+menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
+</script>
 </body>
 </html>
