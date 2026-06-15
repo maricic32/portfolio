@@ -27,6 +27,9 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+        <div class="menu-toggle">
+        ☰
+    </div>
 </header>
     <section class="home" id="home">
 
@@ -90,6 +93,14 @@
             modal.classList.remove("show");
         }
     }
+</script>
+<script>
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav');
+
+menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
 </script>
 
 </body>
