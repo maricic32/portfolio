@@ -27,6 +27,9 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+        <div class="menu-toggle">
+        ☰
+    </div>
 </header>
 
     <section class="about-page">
@@ -147,6 +150,14 @@ animateCounter("projects", 500, 50);
 animateCounter("artists", 120, 50);
 animateCounter("partners", 50, 50);
 animateCounter("visitors", 10000, 100);
+</script>
+<script>
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav');
+
+menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
 </script>
 
 </body>
