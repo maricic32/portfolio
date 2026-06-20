@@ -989,6 +989,7 @@ footer{
         margin-bottom: 16px;
     }
 }
+
 @media (max-width:1024px){
 
     .gallery-page{
@@ -1042,7 +1043,7 @@ footer{
 
     .portfolio-info{
     padding: 160px 20px 70px;
-     }
+    }
 
     .portfolio-info h1{
         font-size:30px;
