@@ -965,4 +965,16 @@ footer{
 .client-info li {
     margin-bottom: 10px;
 }
+@media (max-width: 768px) {
+
+    .about-content p{
+        text-align: justify;
+        text-justify: inter-word;
+        line-height: 1.8;
+        word-spacing: normal;
+        letter-spacing: normal;
+        display: block;
+    }
+
+}
 
