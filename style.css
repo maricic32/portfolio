@@ -60,68 +60,6 @@ nav ul li a{
     cursor:pointer;
 }
 
-
-@media(max-width:768px){
-
-    nav{
-        position:absolute;
-        top:90px;
-        left:0;
-        width:100%;
-        background:#130f0f;
-        display:none;
-    }
-
-    nav.active{
-        display:block;
-    }
-
-    nav ul{
-        flex-direction:column;
-        gap:20px;
-        padding:30px 0;
-        text-align:center;
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
-  
-    .menu-toggle{
-        position:absolute;
-        top:50%;
-        right:10%;
-        transform:translateY(-50%);
-        font-size:42px;
-        line-height:1;
-        display:flex;
-        align-items:center;
-    }
-
-    header{
-        height:80px;
-        padding:0 7%;
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-    }
-
-
-    .home-content h1{
-        font-size:40px;
-    }
-
-    .home-content p{
-        font-size:16px;
-    }
-
-    .logo{
-        font-size:32px;
-        line-height:1;
-        margin-top:6px;
-    }
-}
-
-
 footer{
     padding:30px;
     text-align:center;
@@ -967,6 +905,80 @@ footer{
 .client-info li {
     margin-bottom: 10px;
 }
+@media(max-width:768px){
+
+    nav{
+        position:absolute;
+        top:90px;
+        left:0;
+        width:100%;
+        background:#130f0f;
+        display:none;
+    }
+
+    nav.active{
+        display:block;
+    }
+
+    nav ul{
+        flex-direction:column;
+        gap:20px;
+        padding:30px 0;
+        text-align:center;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+  
+    .menu-toggle{
+        position:absolute;
+        top:50%;
+        right:10%;
+        transform:translateY(-50%);
+        font-size:42px;
+        line-height:1;
+        display:flex;
+        align-items:center;
+    }
+
+    header{
+        height:80px;
+        padding:0 7%;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+    .home{
+        padding:20px 15px;
+    }
+
+
+    .home-content h1{
+        font-size:32px;
+        line-height:1.2;
+        margin-bottom:15px;
+    }
+
+    .home-content p{
+        font-size:16px;
+        line-height:1.6;
+        margin-bottom:25px;
+        padding:0 10px;
+    }
+
+    .logo{
+        font-size:32px;
+        line-height:1;
+        margin-top:6px;
+    }
+
+    .home-content button{
+        font-size:16px;
+        padding:10px 20px;
+    }
+    
+}
+
 @media (max-width: 768px) {
 
     .about-content{
